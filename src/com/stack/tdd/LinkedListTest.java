@@ -26,5 +26,17 @@ public class LinkedListTest {
 		list.add("a");
 		Assert.assertEquals(1,list.size());
 	}
+	
+	@Test
+	public void testGet_oneElement() {
+//		list.add("a");
+		givenAListWithOneElement("a"); // given when then
+		String result = list.get(0);
+		Assert.assertEquals("a", result);
+	}
+	private void givenAListWithOneElement(String value) {
+		list.add(value);
+		
+	}
 
 }

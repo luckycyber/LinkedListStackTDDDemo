@@ -14,6 +14,11 @@ public class LinkedList<T> {
 		first = new Node(value);
 		
 	}
+	
+	public T get(int index) {
+		return first.value;
+	}
+	
 	private class Node{
 		private final T value;
 		public Node(T value) {
